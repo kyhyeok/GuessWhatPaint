@@ -16,10 +16,10 @@ npm i socket.io 설치
 
 npm i @babel/core 설치 npm i @babel/node 설치 npm i @babel/preset-env 설치
 
-# ============================ Babel SetUp ============================
+# ========== Babel SetUp ==========
 
-# ============================ Server SetUp ============================
+# ========== Server SetUp ==========
 
 npm i pug
 
-# ============================ Server SetUp ============================
+# ========== Server SetUp ==========
