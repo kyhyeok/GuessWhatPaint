@@ -2,6 +2,10 @@
 
 GuessWhatTheyArePainting
 
+package-lock.json을 지웠을 경우
+
+npm install --package-lock 하면 생긴다
+
 # ============================ Babel SetUp ============================
 
 github 생성하고
