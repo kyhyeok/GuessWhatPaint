@@ -1,14 +1,3 @@
-import { handleMessageNotify } from "./chat";
+import "./login";
 
-const socket = io("/");
-
-const sendMessage = (message) => {
-  socket.emit("newMessage", { message });
-  console.log(`You: ${message}`);
-}
-
-const  setNickname = (nickname) => {
-  socket.emit("setNickname", { nickname });
-}
-
-socket.on("messageNotify", handleMessageNotify);
+console.log(window.socket);
