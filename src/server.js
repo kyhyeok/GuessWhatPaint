@@ -12,7 +12,9 @@ app.set("view engine", "pug");
 app.set("views", join(__dirname, "views"));
 app.use(logger("dev"));
 app.use(express.static(join(__dirname, "static")));
-app.get("/", (req, res) => res.render("home", { events : JSON.stringify(events) }));
+app.get("/", (req, res) =>
+  res.render("home", { events: JSON.stringify(events) })
+);
 
 function handleListening() {
   console.log(`✅  Server running: http://localhost:${PORT}`);
@@ -23,5 +25,5 @@ const server = app.listen(PORT, handleListening);
 const io = socketIo.listen(server);
 
 io.on("connection", socket => {
-  socketController(socket)
+  socketController(socket);
 });
